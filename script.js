@@ -23,8 +23,8 @@ function generatePassword() {
     return takeUserChoice()
   }
   else {
-    alert("Password has to be between 8 and 125 characters long.")
-    generatePassword()
+    alert("Password has to be between 8 and 126 characters long.")
+    return generatePassword()
   }
 }
 
