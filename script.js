@@ -17,7 +17,13 @@ function writePassword() {
 }
 
 function generatePassword() {
-  passwordLength = parseInt(prompt("Enter Password Length ;)"))
+  let userStop = prompt("Enter Password Length ;)")
+  if (userStop === null) {
+    alert("Thank you come again, when you need another password.")
+    return "Your Secure Password"
+  }
+
+  passwordLength = parseInt(userStop)
   console.log(passwordLength)
   if (passwordLength >= 8 && passwordLength < 126) {
     return takeUserChoice()
