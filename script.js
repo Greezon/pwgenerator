@@ -58,7 +58,7 @@ function takeUserChoice() {
   }
   else {
     alert("You have to choose at least ONE option...")
-    takeUserChoice()
+    return takeUserChoice()
   }
 }
 
