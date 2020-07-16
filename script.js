@@ -20,7 +20,7 @@ function generatePassword(){
   passwordLength=parseInt(prompt("Enter Password Length ;)"))
 console.log(passwordLength)
 if (passwordLength >= 8 && passwordLength < 126){
-  takeUserChoice()
+  return takeUserChoice()
 }
 }
 function takeUserChoice(){
@@ -48,6 +48,7 @@ function takeUserChoice(){
      password += getUserChoice[index]
     }
     console.log (password)
+    return password
   }
 }
 
