@@ -8,12 +8,12 @@ var symbolArray = "-_!@#$%^&*()"
 var getUserChoice = []
 var passwordLength = 0
 // Write password to the #password input
+
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
 
 function generatePassword() {
@@ -31,8 +31,8 @@ function generatePassword() {
 function takeUserChoice() {
   var yesUpper = confirm("Would you like to have upper case letters in your PW?")
   var yesLower = confirm("Would you like to have lower case letters in your PW?")
-  var yesNumbers = confirm("Would you like to have upper case letters in your PW?")
-  var yesSymbols = confirm("Would you like to have upper case letters in your PW?")
+  var yesNumbers = confirm("Would you like to have #s in your PW?")
+  var yesSymbols = confirm("Would you like to have 5ym80L5 in your PW?")
   getUserChoice = []
   if (yesUpper) {
     getUserChoice += upperArray
