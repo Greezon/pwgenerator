@@ -42,9 +42,12 @@ function takeUserChoice(){
   }
   if(getUserChoice.length>0){
     console.log(getUserChoice)
-    // // for(let i=0;i<passwordLength;i++){
-    // //   Math.random()*getUserChoice.length
-    // }
+    var password=""
+    for(let i=0;i<passwordLength;i++){
+     var index=Math.floor ( Math.random()*getUserChoice.length)
+     password += getUserChoice[index]
+    }
+    console.log (password)
   }
 }
 
