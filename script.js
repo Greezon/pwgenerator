@@ -32,7 +32,7 @@ function generatePassword() {
 // if the user types in a number between 8 and 128 it will take "take user choice" or tell the user to use a number between 8 and 128
   passwordLength = parseInt(userStop)
   console.log(passwordLength)
-  if (passwordLength >= 8 && passwordLength < 128) {
+  if (passwordLength >= 8 && passwordLength <= 128) {
     return takeUserChoice()
   }
   else {
